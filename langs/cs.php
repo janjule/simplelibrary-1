@@ -16,6 +16,13 @@ $translations = [
     "AUTHOR_ADD_BORN"           => "Datum narození",
     "AUTHOR_ADD_DECEASED"       => "Datum umrtí",
     "AUTHOR_ADD_NATIONALITY"    => "Národnost",
+    "AUTHOR_ADD_SUBMIT"         => "Přidat autora",
+    "AUTHOR_ADD_SUCCESS"        => "Autor byl úspěšně přidán!",    
 
-    
+    "PUBLISHER_ADD_HTMLTITLE"   => "Přidat nakladatelství / vydavatele publikace",
+    "PUBLISHER_ADD_TITLE"       => "Název",
+    "PUBLISHER_ADD_ADDRESS"     => "Adresa",
+    "PUBLISHER_ADD_SUBMIT"      => "Přidat nakladatele",
+    "PUBLISHER_ADD_SUCCESS"     => "Nakladatel byl úspěšně přidán!",
+
 ];

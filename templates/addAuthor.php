@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<!--
+
     <div class="container">
         <?php if(isset($_GET['success'])): ?>
             <div class="row">&nbsp;</div>
@@ -19,7 +19,7 @@
                 <?php _e("AUTHOR_ADD_SUCCESS"); ?>
             </div>
         <?php endif; ?>
-        -->
+       
 
         <h2 class="text-center"><?php _e("AUTHOR_ADD_HTMLTITLE"); ?></h2>
         <hr>
@@ -57,7 +57,7 @@
 
             <div class="form-group">
                 <div class="col-sm-offset-3 col-sm-6">
-                    <button type="submit" class="btn btn-default"><?php _e("PUBLICATION_ADD_SUBMIT"); ?></button>
+                    <button type="submit" class="btn btn-default"><?php _e("AUTHOR_ADD_SUBMIT"); ?></button>
                 </div>
             </div>
         </form>
