@@ -30,13 +30,13 @@
             <div class="form-group">
                 <label class="control-label col-sm-3" for="publication[title]"><?php _e("PUBLICATION_ADD_TITLE"); ?></label>
                 <div class="col-sm-6">
-                    <input class="form-control" name="publication[title]" type="text" size="128">
+                    <input class="form-control" name="publication[title]" type="text" size="128" required>
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-3" for="publication[edition]"><?php _e("PUBLICATION_ADD_EDITION"); ?></label>
                 <div class="col-sm-6">
-                    <input class="form-control" name="publication[edition]" type="number" size="4">
+                    <input class="form-control" name="publication[edition]" type="number" size="4" required>
                 </div>
             </div>
             <div class="form-group">
@@ -48,7 +48,7 @@
             <div class="form-group">
                 <label class="control-label col-sm-3" for="publication[published]"><?php _e("PUBLICATION_ADD_PUBLISHED"); ?></label>
                 <div class="col-sm-6">
-                    <input class="form-control" name="publication[published]" type="date" size="4">
+                    <input class="form-control" name="publication[published]" type="date" size="4" required>
                 </div>
             </div>
             <div class="form-group">

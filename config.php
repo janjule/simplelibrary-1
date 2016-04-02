@@ -10,3 +10,6 @@ $cfg = [
     "dbPass" => "",
     "dbBase" => "simplelibrary"
 ];
+
+isset($_GET['lang']) ? : $_GET['lang'] = "en" ;
+
