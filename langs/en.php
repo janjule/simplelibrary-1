@@ -9,6 +9,7 @@ $translations = [
     "PUBLICATION_ADD_PUBLISHED" => "Published date",
     "PUBLICATION_ADD_SUBMIT"    => "Add",
     "PUBLICATION_ADD_SUCCESS"   => "Publication has been added successfully.",
+    "PUBLICATION_CHOOSE_AUTHOR" => "Choose an author",
 
     "AUTHOR_ADD_HTMLTITLE"      => "Add author",
     "AUTHOR_ADD_FIRSTNAME"      => "Firstname",

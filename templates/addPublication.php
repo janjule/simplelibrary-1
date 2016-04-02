@@ -21,6 +21,18 @@
         <h2 class="text-center"><?php _e("PUBLICATION_ADD_HTMLTITLE"); ?></h2>
         <hr>
         <form class="form-horizontal" role="form" action="../formHandler.php" method="post">
+
+            <!--  added SELECT option for AUTHORS  -->
+            <div class="form-group">
+                <label class="control-label col-sm-3" ><?php _e("PUBLICATION_CHOOSE_AUTHOR"); ?></label>
+                <div class="col-sm-6">
+                     <select name="author"  >
+                      <option value="jb">jablko</option>
+                      <option value="hs" selected="selected">hruška</option>
+                     </select> 
+                </div>
+            </div>
+
             <div class="form-group">
                 <label class="control-label col-sm-3" for="publication[isbn]"><?php _e("PUBLICATION_ADD_ISBN"); ?></label>
                 <div class="col-sm-6">
