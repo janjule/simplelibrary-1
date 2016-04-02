@@ -25,4 +25,10 @@ $translations = [
     "PUBLISHER_ADD_SUBMIT"      => "Přidat nakladatele",
     "PUBLISHER_ADD_SUCCESS"     => "Nakladatel byl úspěšně přidán!",
 
+    "AGERANGE_ADD_HTMLTITLE"    => "Přidat věkové omezení",
+    "AGERANGE_ADD_TITLE"        => "Název věkového rozpětí",
+    "AGERANGE_ADD_YEARSFROM"    => "Věk od",
+    "AGERANGE_ADD_YEARSTO"      => "Věk do",
+    "AGERANGE_ADD_SUBMIT"       => "Přidat věkové rozpětí",
+    "AGERANGE_ADD_SUCCESS"      => "Věkové rozpětí úspěšně přidáno!",
 ];
