@@ -26,9 +26,20 @@
             <div class="form-group">
                 <label class="control-label col-sm-3" ><?php _e("PUBLICATION_CHOOSE_AUTHOR"); ?></label>
                 <div class="col-sm-6">
-                     <select name="author"  >
-                      <option value="jb">jablko</option>
-                      <option value="hs" selected="selected">hruška</option>
+                     
+                     <?php 
+                        $db = getDb();
+                        //$selectAuthors = 'SELECT id, lastname, firstname, nationality, born FROM authors';
+                        $selectAuthors = 'SELECT lastname FROM authors';
+                        $resultAuthors = mysqli_query($db, $selectAuthors);
+             
+                        echo '<select name="author">';
+                        $i = 0;
+                        while ($list = mysqli_fetch_row($resultAuthors)) :
+                            echo '<option value="'.$list[$i].'">'.$list[$i].'</option>';
+                            $i = $i + 1;
+                        endwhile;
+                     ?>
                      </select> 
                 </div>
             </div>
