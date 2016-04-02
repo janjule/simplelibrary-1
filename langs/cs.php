@@ -31,4 +31,10 @@ $translations = [
     "AGERANGE_ADD_YEARSTO"      => "Věk do",
     "AGERANGE_ADD_SUBMIT"       => "Přidat věkové rozpětí",
     "AGERANGE_ADD_SUCCESS"      => "Věkové rozpětí úspěšně přidáno!",
+
+    "GENRE_ADD_HTMLTITLE"       => "Přidat žánr publikace",
+    "GENRE_ADD_TITLE"           => "Název žánru",
+    "GENRE_ADD_SUBMIT"          => "Přidat žánr",
+    "GENRE_ADD_SUCCESS"         => "Žánr byl úspěšně přidán.",
+    
 ];
