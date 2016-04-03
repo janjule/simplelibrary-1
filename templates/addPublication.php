@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title><?php _e("PUBLICATION_ADD_HTMLTITLE"); ?></title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -34,8 +35,9 @@
                             echo '<option value="'.$r['id'].'">'.$r['lastname'].', '.$r['firstname'].', '.$r['born']. '</option>';
                         }
                         mysql_free_result($resultAuthors);
+                        echo '</select> ';
                      ?>
-                        </select> 
+                        
                 </div>
             
             
@@ -44,7 +46,7 @@
             <div class="form-group">
                 <label class="control-label col-sm-3" for="publication[isbn]"><?php _e("PUBLICATION_ADD_ISBN"); ?></label>
                 <div class="col-sm-6">
-                    <input class="form-control" name="publication[isbn]" type="text" size="30">
+                    <input class="form-control" name="publication[isbn]" type="text" size="20">
                 </div>
             </div>
             <div class="form-group">
