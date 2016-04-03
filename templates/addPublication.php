@@ -20,13 +20,10 @@
         <?php endif; ?>
         <h2 class="text-center"><?php _e("PUBLICATION_ADD_HTMLTITLE"); ?></h2>
         <hr>
-        <form class="form-horizontal" role="form" action="../formHandler.php" method="post">
-
+        
             <!--  added SELECT option for AUTHORS  -->
-            <div class="form-group">
                 <label class="control-label col-sm-3" ><?php _e("PUBLICATION_CHOOSE_AUTHOR"); ?></label>
-                <div class="col-sm-6">
-                     
+                <div class="col-sm-6"> 
                      <?php 
                         $db = getDb();
                         $selectAuthors = 'SELECT id, lastname, firstname, nationality, born FROM authors';
@@ -36,11 +33,14 @@
                         foreach ($resultAuthors as $r) {
                             echo '<option value="'.$r['id'].'">'.$r['lastname'].', '.$r['firstname'].', '.$r['born']. '</option>';
                         }
+                        mysql_free_result($resultAuthors);
                      ?>
-                     </select> 
+                        </select> 
                 </div>
-            </div>
-
+            
+            
+        <p>
+        <form class="form-horizontal" role="form" action="../formHandler.php" method="post">
             <div class="form-group">
                 <label class="control-label col-sm-3" for="publication[isbn]"><?php _e("PUBLICATION_ADD_ISBN"); ?></label>
                 <div class="col-sm-6">

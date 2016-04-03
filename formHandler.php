@@ -2,6 +2,7 @@
 
 require("functions.php");
 
+// insert GENRE into table
 if (isset($_POST['genre']) && count($_POST['genre'])) {
       $db = getDb();
      //validate($_POST['genre'], $db);
@@ -18,8 +19,7 @@ if (isset($_POST['genre']) && count($_POST['genre'])) {
      }
  }
 
-
-
+// insert AGERANGE into table
 if (isset($_POST['agerange']) && count($_POST['agerange'])) {
       $db = getDb();
       //validate($_POST['author'], $db);
@@ -54,7 +54,6 @@ if (isset($_POST['publisher']) && count($_POST['publisher'])) {
      }
  }
 
-
 if (isset($_POST['author']) && count($_POST['author'])) {
       $db = getDb();
       //validate($_POST['author'], $db);
@@ -71,8 +70,6 @@ if (isset($_POST['author']) && count($_POST['author'])) {
          echo mysqli_error($db);
      }
  }
-
-
 
 if (isset($_POST['publication']) && count($_POST['publication'])) {
     $db = getDb();
