@@ -29,16 +29,13 @@
                      
                      <?php 
                         $db = getDb();
-                        //$selectAuthors = 'SELECT id, lastname, firstname, nationality, born FROM authors';
-                        $selectAuthors = 'SELECT lastname FROM authors';
+                        $selectAuthors = 'SELECT id, lastname, firstname, nationality, born FROM authors';
                         $resultAuthors = mysqli_query($db, $selectAuthors);
              
                         echo '<select name="author">';
-                        $i = 0;
-                        while ($list = mysqli_fetch_row($resultAuthors)) :
-                            echo '<option value="'.$list[$i].'">'.$list[$i].'</option>';
-                            $i = $i + 1;
-                        endwhile;
+                        foreach ($resultAuthors as $r) {
+                            echo '<option value="'.$r['id'].'">'.$r['lastname'].', '.$r['firstname'].', '.$r['born']. '</option>';
+                        }
                      ?>
                      </select> 
                 </div>
